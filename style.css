@@ -6,9 +6,105 @@
 
 :root {
     font-size: 62.5%;
+    --tt-placeholder:  #7C7C8A;
+    --bg-sendButton: #065E7C;
+
 }
 
 body * {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #2F2F33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    gap: 29.3rem;
+    margin: 11.5rem 16rem 8.7rem 16rem;
+}
+
+header svg {
+    margin-top: 1.5rem;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    text-align: center;
+}
+
+header div input {
+    border: none;
+    background-color: transparent;
+    padding: 1.6rem;
+    width: 43rem;
+    color: var(--tt-placeholder)
+    
+}
+
+header div input:focus{
+    background-color: var(--bg-sendButton);
+    border-radius: .5rem;
+    outline: 0;
+    color: #FFFFFF;
+}
+
+header div input::placeholder {
+    color: var(--tt-placeholder);
+}
+
+header div button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    border: none;
+    background: var(--bg-sendButton);
+    padding: 1.2rem 3.2rem;
+    gap: .8rem;
+    border-radius: .5rem;
+
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    transition: background .5s;
+}
+
+header div button:hover{
+    cursor: pointer;
+    background: #FFFFFF;
+    color: var(--bg-sendButton);
+}
+
+header div button:hover svg path {
+    fill: var(--bg-sendButton);
+    
+}
+
+header div button svg {
+    margin: 0;
+
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
