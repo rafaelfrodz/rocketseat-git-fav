@@ -99,26 +99,50 @@ header div button {
     line-height: 2.4rem;
 
     transition: background .5s;
+    transition: font-size .4s;
 }
 
 header div button:hover{
     cursor: pointer;
     background: #FFFFFF;
     color: var(--bg-sendButton);
+    font-size: 1.5rem;
 }
 
 header div button:hover svg path {
     fill: var(--bg-sendButton);
-    
 }
 
 header div button svg {
     margin: 0;
+}
 
+.table-wrapper {
+    max-height: 65rem;
+    overflow-y: auto;
+    border: 2px solid #092D38;
+    border-radius: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+    background-color: transparent;
+    padding-left: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background: #4A808C;
+    border-radius: 6px;
 }
 
 table {
-    border-collapse: collapse;
+    width: 100%;
+    
+    border-spacing: 0;
+    overflow: hidden;
+    position: relative;
 }
 
 table * {
@@ -137,12 +161,7 @@ table thead {
 
 table thead tr th:first-child {
     padding: 1.6rem 39.4rem 1.6rem 4rem;
-    border-top-left-radius: .4rem;
 }
-
-table thead tr th:last-child{
-    border-top-right-radius: .4rem;
-} 
 
 table thead tr th {
     padding: 1.6rem 9.2rem 1.6rem 4rem;
@@ -152,13 +171,6 @@ table tr:nth-child(even){
     background-color:var(--bg-Input-e-Row);
 }
 
-table tbody tr:last-child td:last-child{
-    border-bottom-right-radius: .4rem;
-}
-
-table tbody tr:last-child td:first-child{
-    border-bottom-left-radius: .4rem;
-}
 
 table tbody tr td {
     text-align: start;
@@ -185,4 +197,34 @@ table tbody tr td a {
 table tbody tr td button {
     border: none;
     background-color: transparent;
+    color: #F75A68;
+    transition: font-size .5s;
+}
+
+table tbody tr td button:hover {
+    cursor: pointer;
+    color: #ffa7ae;
+    font-size: 2.1rem;
+}
+
+
+/* NO USER FAVORITED */
+.no-favorite {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.no-favorite-display{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 21rem;
+    margin-bottom: 21rem;
+}
+
+.no-favorite-display p{
+    font-weight: 700;
+    font-size: 4rem;
+    color: #4E5455;
 }
