@@ -204,12 +204,12 @@ table tbody tr td:nth-child(2){
 
 table tbody tr td:nth-child(3){
     padding: 2rem 9.2rem 2.4rem 0rem;
-    
 }
 
 
 table tbody tr td a {
     width: 29rem;
+    text-transform: lowercase;
 }
 
 table tbody tr td:first-child {
