@@ -85,7 +85,7 @@ export class FavoritesViewer extends Favorites {
             row.querySelector('.user img').alt = `imagem de ${user.name}`
             row.querySelector('.user a').href = `https://github.com/${user.login}`
             row.querySelector('.user p').innerHTML = `${user.name}`
-            row.querySelector('.user a span').innerHTML = `${user.login}`
+            row.querySelector('.user a span').innerHTML = `/${user.login}`
             row.querySelector('.repositories').innerHTML = `${user.public_repos}`
             row.querySelector('.followers').innerHTML = `${user.followers}`
 

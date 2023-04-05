@@ -209,8 +209,7 @@ table tbody tr td:nth-child(3){
 
 
 table tbody tr td a {
-    width: 290px;
-    
+    width: 29rem;
 }
 
 table tbody tr td:first-child {
@@ -239,13 +238,12 @@ table tbody tr td button {
     border: none;
     background-color: transparent;
     color: #F75A68;
-    transition: font-size .5s;
+    transition: color .3s;
 }
 
 table tbody tr td button:hover {
     cursor: pointer;
     color: #ffa7ae;
-    font-size: 2.1rem;
 }
 
 /* NO USER FAVORITED */
