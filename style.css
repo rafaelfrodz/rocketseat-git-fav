@@ -99,14 +99,12 @@ header div button {
     line-height: 2.4rem;
 
     transition: background .5s;
-    transition: font-size .4s;
 }
 
 header div button:hover{
     cursor: pointer;
     background: #FFFFFF;
     color: var(--bg-sendButton);
-    font-size: 1.5rem;
 }
 
 header div button:hover svg path {
@@ -119,7 +117,9 @@ header div button svg {
 
 .table-wrapper {
     max-height: 65rem;
-    overflow-y: auto;
+    width: 77%;
+    margin: auto;
+    
     border: 2px solid #092D38;
     border-radius: 1.2rem;
 }
@@ -138,11 +138,12 @@ header div button svg {
 }
 
 table {
-    width: 100%;
-    
     border-spacing: 0;
-    overflow: hidden;
-    position: relative;
+    max-height: 50.0rem;
+    display: flex;
+    flex-direction: column;
+    height: 55rem;
+    
 }
 
 table * {
@@ -156,11 +157,13 @@ table * {
 table thead {
     color: var(--tt-table-primary);
     background-color: #092D38;
+    text-align: start;
+    position: relative;
 }
 
 
 table thead tr th:first-child {
-    padding: 1.6rem 39.4rem 1.6rem 4rem;
+    padding: 1.6rem 30rem 1.6rem 4rem;
 }
 
 table thead tr th {
@@ -170,11 +173,33 @@ table thead tr th {
 table tr:nth-child(even){
     background-color:var(--bg-Input-e-Row);
 }
+tbody {
+    display: flex;
+    flex-direction: column;
+    
+    overflow-y: auto;
+}
 
+tbody td {
+    width: 100%;
+}
+
+tbody tr {
+    display: flex;
+    align-items: center;
+}
+
+tbody tr .user {
+    display: flex;
+    flex-direction: column;
+  }
 
 table tbody tr td {
+    
     text-align: start;
     padding: 2.4rem 0 2.4rem 4rem;
+    width: 50%;
+
 }
 
 table tbody tr td:first-child {
