@@ -116,7 +116,6 @@ header div button svg {
 }
 
 .table-wrapper {
-    max-height: 65rem;
     width: 77%;
     margin: auto;
     
@@ -139,11 +138,9 @@ header div button svg {
 
 table {
     border-spacing: 0;
-    max-height: 50.0rem;
     display: flex;
     flex-direction: column;
-    height: 55rem;
-    
+    max-height: 65rem;   
 }
 
 table * {
@@ -157,26 +154,28 @@ table * {
 table thead {
     color: var(--tt-table-primary);
     background-color: #092D38;
-    text-align: start;
-    position: relative;
+    text-align: start;   
 }
 
-
 table thead tr th:first-child {
-    padding: 1.6rem 30rem 1.6rem 4rem;
+    padding: 1.6rem 30rem 1.6rem 5rem;
+}
+
+table thead tr th:last-child {
+    padding: 1.6rem 0 1.6rem 5rem;
 }
 
 table thead tr th {
-    padding: 1.6rem 9.2rem 1.6rem 4rem;
+    padding: 1.6rem 9.2rem 1.6rem 3rem;
 }
 
 table tr:nth-child(even){
     background-color:var(--bg-Input-e-Row);
 }
+
 tbody {
     display: flex;
     flex-direction: column;
-    
     overflow-y: auto;
 }
 
@@ -187,19 +186,31 @@ tbody td {
 tbody tr {
     display: flex;
     align-items: center;
+    border-top: 2px #092D38 solid;
 }
 
-tbody tr .user {
-    display: flex;
-    flex-direction: column;
-  }
+tbody tr:first-child{
+    border-top: none;
+}
 
 table tbody tr td {
-    
+    padding: 2.4rem 9.2rem 2.4rem 4rem;
     text-align: start;
-    padding: 2.4rem 0 2.4rem 4rem;
-    width: 50%;
+}
 
+table tbody tr td:nth-child(2){
+    margin-right: 7rem;
+}
+
+table tbody tr td:nth-child(3){
+    padding: 2rem 9.2rem 2.4rem 0rem;
+    
+}
+
+
+table tbody tr td a {
+    width: 290px;
+    
 }
 
 table tbody tr td:first-child {
@@ -207,6 +218,7 @@ table tbody tr td:first-child {
     flex-direction: row;
     align-items: center;
     gap: 1.6rem;
+    padding: 2.4rem 0 2.4rem 5rem;
 }
 
 table tbody tr td img {
@@ -217,6 +229,10 @@ table tbody tr td img {
 
 table tbody tr td a {
     text-decoration: none;
+}
+
+table tbody tr td:last-child{
+    padding: 2.4rem 8rem 2.4rem 4rem;
 }
 
 table tbody tr td button {
@@ -231,7 +247,6 @@ table tbody tr td button:hover {
     color: #ffa7ae;
     font-size: 2.1rem;
 }
-
 
 /* NO USER FAVORITED */
 .no-favorite {
